@@ -1,0 +1,1007 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/13/2023 6:29:33 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-3GTM7AG"
+  DTS:CreatorName="DESKTOP-3GTM7AG\Jurgen"
+  DTS:DTSID="{F7685CE1-7796-4C19-9BB1-72C8005F0C31}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5228.0"
+  DTS:LocaleID="2058"
+  DTS:ObjectName="Tarea de flujo de datos2"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{C8345BD0-F4CF-46F6-A5F0-D987818DE4C2}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Archivo csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="copa del mundo keys"
+      DTS:DTSID="{21670E56-52BC-42D9-B662-263FF2E5AA56}"
+      DTS:ObjectName="Archivo csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2058"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\BI\EjerciciosETL\01Flujodecontrol\02Tareas de Flujo de Datos\Reportes\WorldCups.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{F707A98D-A9A5-4BA3-8326-4B499AE96267}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{A8B4274B-E82F-4668-8C3B-D4972E5CC4B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Winner"
+              DTS:DTSID="{11696B8E-944B-49F3-9F81-52F179166D79}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Runners-Up"
+              DTS:DTSID="{B5D4F9EB-829C-4E10-B230-D5298E4EEB31}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Third"
+              DTS:DTSID="{C58BF949-1937-4473-95CF-AEC509E7144A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fourth"
+              DTS:DTSID="{DE801628-9265-4B59-90F0-B6541587B55E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GoalsScored"
+              DTS:DTSID="{C051A5D7-833F-460E-8509-77E49F193890}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="QualifiedTeams"
+              DTS:DTSID="{6C0F06AF-E738-4060-B67F-CCB5EBDC1774}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MatchesPlayed"
+              DTS:DTSID="{E0CC9E02-22C1-476A-A77D-437373B7288B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Attendance"
+              DTS:DTSID="{98D024C9-BBC9-4029-A54F-1FD1004277A6}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E039CE8A-753E-446D-A7AA-9E0F2EEABD81}"
+      DTS:ObjectName="csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2058"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\BI\EjerciciosETL\01Flujodecontrol\02Tareas de Flujo de Datos\Reportes\WorldCups.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{D430D6E8-8484-4462-A854-393371AD1346}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{63DF4F87-B69C-4506-B5BD-DDB945472166}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Winner"
+              DTS:DTSID="{CD357D9E-32EA-45E2-BA22-51F60A6EA866}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Runners-Up"
+              DTS:DTSID="{ACF352DA-F58E-4D99-945A-E3EED25A9C61}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Third"
+              DTS:DTSID="{7D675C62-4261-4B4D-8206-3FDA9A885C3E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fourth"
+              DTS:DTSID="{409177A8-5CBA-47AD-AD89-D526DC7922D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GoalsScored"
+              DTS:DTSID="{F797FFB8-6415-48D5-9B02-CD83D00781A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="QualifiedTeams"
+              DTS:DTSID="{0CFEEBE8-02A0-49FE-A39D-15BDDC4C9493}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MatchesPlayed"
+              DTS:DTSID="{A8E26335-B6AF-40A5-BB72-64B11C31C03F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Attendance"
+              DTS:DTSID="{18CD4F07-3643-4D2C-B5A3-07E59D967FDD}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.FIFA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B1ADF0D6-8BB7-45C1-AACA-22C4EF3B280E}"
+      DTS:ObjectName="LocalHost.FIFA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=FIFA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Tarea de flujo de datos2-{B1ADF0D6-8BB7-45C1-AACA-22C4EF3B280E}LocalHost.FIFA;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Agregar archivo csv"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{6140A421-38DF-4267-AF62-19B3C0102F83}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Agregar archivo csv"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Agregar archivo csv\Copa"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Copa"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[WorldCups]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Agregar archivo csv\Copa.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.FIFA]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.FIFA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].Columns[Year]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Year"
+                      externalMetadataColumnId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].Columns[Country]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country"
+                      externalMetadataColumnId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].Columns[Winner]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Winner"
+                      externalMetadataColumnId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Winner]"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Winner]" />
+                    <inputColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].Columns[Runners-Up]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Runners-Up"
+                      externalMetadataColumnId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Runners-Up]"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Runners-Up]" />
+                    <inputColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].Columns[Third]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Third"
+                      externalMetadataColumnId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Third]"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Third]" />
+                    <inputColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].Columns[Fourth]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fourth"
+                      externalMetadataColumnId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Fourth]"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Fourth]" />
+                    <inputColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].Columns[GoalsScored]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="GoalsScored"
+                      externalMetadataColumnId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[GoalsScored]"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[GoalsScored]" />
+                    <inputColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].Columns[QualifiedTeams]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="QualifiedTeams"
+                      externalMetadataColumnId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[QualifiedTeams]"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[QualifiedTeams]" />
+                    <inputColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].Columns[MatchesPlayed]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MatchesPlayed"
+                      externalMetadataColumnId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[MatchesPlayed]"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[MatchesPlayed]" />
+                    <inputColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].Columns[Attendance]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Attendance"
+                      externalMetadataColumnId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Attendance]"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Attendance]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Winner]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="Winner" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Runners-Up]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="Runners-Up" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Third]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="Third" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Fourth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="Fourth" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[GoalsScored]"
+                      dataType="i4"
+                      name="GoalsScored" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[QualifiedTeams]"
+                      dataType="i4"
+                      name="QualifiedTeams" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[MatchesPlayed]"
+                      dataType="i4"
+                      name="MatchesPlayed" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input].ExternalColumns[Attendance]"
+                      dataType="r8"
+                      name="Attendance" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Agregar archivo csv\Copa.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\Copa.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Agregar archivo csv\Copa.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\Copa.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Agregar archivo csv\Copa.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Agregar archivo csv\CVS"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="2058"
+              name="CVS"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Agregar archivo csv\CVS.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Year]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      length="50"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      length="50"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Country]"
+                      name="Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Winner]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Winner]"
+                      length="50"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Winner]"
+                      name="Winner"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Runners-Up]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Runners-Up]"
+                      length="50"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Runners-Up]"
+                      name="Runners-Up"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Third]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Third]"
+                      length="50"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Third]"
+                      name="Third"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Fourth]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Fourth]"
+                      length="50"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Fourth]"
+                      name="Fourth"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[GoalsScored]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[GoalsScored]"
+                      length="50"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[GoalsScored]"
+                      name="GoalsScored"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[QualifiedTeams]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[QualifiedTeams]"
+                      length="50"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[QualifiedTeams]"
+                      name="QualifiedTeams"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[MatchesPlayed]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[MatchesPlayed]"
+                      length="50"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[MatchesPlayed]"
+                      name="MatchesPlayed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Attendance]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Attendance]"
+                      length="50"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].Columns[Attendance]"
+                      name="Attendance"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Winner]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Winner" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Runners-Up]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Runners-Up" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Third]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Third" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Fourth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fourth" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[GoalsScored]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="GoalsScored" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[QualifiedTeams]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="QualifiedTeams" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[MatchesPlayed]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MatchesPlayed" />
+                    <externalMetadataColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output].ExternalColumns[Attendance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Attendance" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Agregar archivo csv.Paths[Flat File Source Output]"
+              endId="Package\Agregar archivo csv\Copa.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Agregar archivo csv\CVS.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{D93BC6DB-5194-4BAD-9AAC-7F1DA98F283C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{B1ADF0D6-8BB7-45C1-AACA-22C4EF3B280E}"
+          SQLTask:SqlStatementSource="truncate table WorldCups" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{55D57FB1-891F-425A-A758-C7142077DBDD}"
+      DTS:From="Package\Tarea Ejecutar SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Agregar archivo csv" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Agregar archivo csv"
+          TopLeft="431.666643081441,128.266665774716" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Tarea Ejecutar SQL"
+          TopLeft="411.666644174193,21.6666665159994" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="496.866644174193,63.2666665159994">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="19.9999989072483,64.9999992587169"
+              Start="0,0"
+              End="19.9999989072483,57.4999992587169">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.4999996293585" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.4999996293585"
+                    Point2="0,32.4999996293585"
+                    Point3="4,32.4999996293585" />
+                  <mssgle:LineSegment
+                    End="15.9999989072483,32.4999996293585" />
+                  <mssgle:CubicBezierSegment
+                    Point1="15.9999989072483,32.4999996293585"
+                    Point2="19.9999989072483,32.4999996293585"
+                    Point3="19.9999989072483,36.4999996293585" />
+                  <mssgle:LineSegment
+                    End="19.9999989072483,57.4999992587169" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Agregar archivo csv">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="100,41.6"
+          Id="Package\Agregar archivo csv\CVS"
+          TopLeft="427.499976642431,33.799999764959" />
+        <NodeLayout
+          Size="103.2,41.6"
+          Id="Package\Agregar archivo csv\Copa"
+          TopLeft="414.166644037599,110.066665901277" />
+        <EdgeLayout
+          Id="Package\Agregar archivo csv.Paths[Flat File Source Output]"
+          TopLeft="477.499976642431,75.399999764959">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-11.7333326048319,34.6666661363177"
+              Start="0,0"
+              End="-11.7333326048319,27.1666661363177">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.3333330681589" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.3333330681589"
+                    Point2="0,17.3333330681589"
+                    Point3="-4,17.3333330681589" />
+                  <mssgle:LineSegment
+                    End="-7.7333326048319,17.3333330681589" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7.7333326048319,17.3333330681589"
+                    Point2="-11.7333326048319,17.3333330681589"
+                    Point3="-11.7333326048319,21.3333330681589" />
+                  <mssgle:LineSegment
+                    End="-11.7333326048319,27.1666661363177" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Agregar archivo csv\Copa">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
