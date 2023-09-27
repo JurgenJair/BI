@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Lab1</Name>
-    <LastWriteTime>2023-09-14T01:14:41.5535936Z</LastWriteTime>
+    <LastWriteTime>2023-09-21T22:50:23.7921723Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -24,6 +24,16 @@
     <ProjectBuildItemInfo>
       <Name>Tarea de flujo de datos2.dtsx</Name>
       <LastWriteTime>2023-09-14T01:14:41.5254731Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>03-tareadeexpresion.dtsx</Name>
+      <LastWriteTime>2023-09-20T01:37:09.705031Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>04_cargaetl.dtsx</Name>
+      <LastWriteTime>2023-09-21T22:50:23.7622693Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
